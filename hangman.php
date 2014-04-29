@@ -18,6 +18,7 @@
 			<h1>Hangman</h1>
 		</div>
 		<div id="output">
+			Mikes a GAY
 			
 		</div>
 		<div id="controls">
