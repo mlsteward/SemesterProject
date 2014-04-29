@@ -1,9 +1,9 @@
 //global variables
-var key = "cat";
+var key = ["c","a","t","s"];
 var guesses = ["a", "s", "d", "f"];
 var wordSoFar = [];
 var guessCount;
-var GUESS_THRESHOLD = 5;
+var GUESS_THRESHOLD = 6;
 
 //submit button event handler
 $(document).ready(function(){
@@ -11,6 +11,7 @@ $(document).ready(function(){
 		checkWord($("#guess").val())
 	});
 });
+
 
 function checkWord(guess){
 	//validate word
@@ -92,6 +93,25 @@ function gameWon(){
 	//do celebration?
 }
 
+//****************************************************
+//****************************************************
+
+function addBlankSpaces(){
+	setWordSoFar();
+	var word = "";
+	for(var i = 0; i < wordSoFar.length; i++){
+		var letter = wordSoFar[i];
+		word += letter;
+		word += " ";
+	}
+	document.getElementById("word").innerHTML = word;
+}
+
+function setWordSoFar(){
+	for(var i = 0; i < key.length ; i++){
+		wordSoFar[i] = "_";
+	}
+}
 
 
 

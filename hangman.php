@@ -18,8 +18,9 @@
 			<h1>Hangman</h1>
 		</div>
 		<div id="output">
-			Mikes a GAY
-			
+			<p id="word">Word</p>
+			<button onclick="addBlankSpaces();">Test</button>
+			<p id="guesses">Guesses</p>
 		</div>
 		<div id="controls">
 			<h3>Enter a letter</h3>
